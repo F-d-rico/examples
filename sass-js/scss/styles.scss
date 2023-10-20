@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -28,16 +27,35 @@
 $enable-gradients: true;
 $enable-shadows: true;
 
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+$enable-negative-margins: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); //
+
+$nav-link-padding-y: 1rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1060px,
+  xxl: 1080px,
+);
 
 // Include functions first
 @import "bootstrap/scss/functions";
 
 // Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
-$success: #7952b3;
+$body-color: #222;
+$body-bg: #fafafa;
+$border-radius: 0.4rem;
+$primary: #244a9a;
+$red: #e6223d;
+$orange: #e15317;
+$yellow: #fe9933;
+
+$font-family-base: "Ubuntu", Tahoma, sans-serif;
+
+$btn-border-radius: 2rem;
 
 // Required
 @import "bootstrap/scss/variables";
@@ -53,19 +71,19 @@ $success: #7952b3;
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/alert";
+@import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
@@ -73,10 +91,10 @@ $success: #7952b3;
 @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas"; // Requires transitions
-// @import "bootstrap/scss/placeholders";
+@import "bootstrap/scss/placeholders";
 
 // Helpers
 // @import "bootstrap/scss/helpers";
@@ -84,13 +102,358 @@ $success: #7952b3;
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
-
 //
 // Custom styles
 //
 
 @import "icon-list";
 
+//font-family: 'Nunito Sans', sans-serif;
+//font-family: 'Solway', 'Trebuchet MS', sans-serif;
+//font-family: 'Ubuntu', 'Tahoma', sans-serif;
+
+html {
+  font-size: 14px;
+}
+
 body {
-  padding: 1.5rem;
+  padding: 0 0;
+}
+
+h1 {
+  font: 700 2.3rem "Solway", "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  font: 500 2rem "Solway", "Trebuchet MS", sans-serif;
+  color: $red;
+}
+
+h3 {
+  font: 700 1.8rem "Ubuntu", "Tahoma", sans-serif;
+  color: $primary;
+}
+
+h4 {
+  font: 300 1.3rem "Ubuntu", "Tahoma", sans-serif;
+}
+
+h5 {
+  font: 400 1.15rem "Ubuntu", "Tahoma", sans-serif;
+}
+
+h6 {
+  font: 500 1rem "Ubuntu", "Tahoma", sans-serif;
+}
+
+.text-body-emphasis {
+  font: 300 1.15rem "Ubuntu", "Tahoma", sans-serif;
+  line-height: 1.75rem;
+}
+
+.shadowP {
+  box-shadow: 0.8rem 0.8rem $primary;
+}
+
+.shadowY {
+  box-shadow: 1rem 0.8rem $yellow;
+}
+
+.shadowB {
+  box-shadow: 0.5rem 0.5rem 0.5rem $body-color;
+}
+
+// Component
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  nav {
+    width: 100%;
+    margin: 0 0.5rem;
+    .navbar-brand img {
+      height: 3rem;
+    }
+    .nav-link.active {
+      color: $primary !important;
+      .iconLogo {
+        opacity: 1;
+        filter: invert(23%) sepia(47%) saturate(2142%) hue-rotate(202deg)
+          brightness(63%) contrast(92%) opacity(50%);
+      }
+    }
+    .nav-link {
+      text-align: right;
+      &:hover {
+        color: $primary !important;
+        .iconLogo {
+          opacity: 1;
+        }
+      }
+      &:active {
+        color: $primary !important;
+        .iconLogo {
+          opacity: 1;
+          filter: invert(23%) sepia(47%) saturate(2142%) hue-rotate(202deg)
+            brightness(63%) contrast(92%) opacity(50%);
+        }
+      }
+      .iconLogo {
+        display: none;
+        margin: 0 auto;
+        width: 2rem;
+        height: 1rem;
+        background-image: url("../assetts/sol.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.hero {
+  h1 {
+    max-width: 40rem;
+    margin-bottom: 8rem;
+    margin-left: 0.5em;
+    color: white;
+  }
+  span {
+    width: 100%;
+    margin-right: auto;
+  }
+  article {
+    display: flex;
+  }
+  img {
+    display: none;
+    opacity: 0.3;
+    margin-left: 5rem;
+    width: 3rem;
+    transform: rotate(-45deg);
+  }
+  h4 {
+    position: relative;
+    max-width: 40rem;
+    margin: 0 1rem;
+    padding: 2rem;
+    background-color: white;
+    transform: rotate(-5deg);
+    top: -5rem;
+    color: $primary;
+    text-align: center;
+    &::before {
+      background: url(../assetts/destello.svg) 0 0 no-repeat;
+      content: "";
+      position: absolute;
+      width: 2.5rem;
+      height: 1.5em;
+      top: 0.75rem;
+      left: 0.5rem;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.heading {
+  margin: 6rem auto;
+  text-align: center;
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.imgInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 6rem auto;
+  .circleImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .info {
+    margin: 2rem;
+    .iconsInfo {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      .iconFlag {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          width: 4rem;
+          margin-right: .5rem;
+        }
+        p {
+          font-weight: 300;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10rem;
+  background-color: $primary;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    img {
+      height: 4rem;
+      margin: 0 1rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    i {
+      font-size: 1.25rem;
+      padding: 1rem;
+    }
+  }
+}
+
+.bgImgIndex {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
+    url(../assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg);
+  background-size: cover;
+  background-position: right top;
+  height: 32rem;
+}
+
+.flechas {
+  width: 3rem;
+  margin: 4rem auto;
+  display: none;
+  opacity: 0.3;
+}
+
+.mirror {
+  transform: scale(-1, 1);
+  transform-origin: center;
+}
+
+
+
+///////////////////////////////////////////////////////////
+
+/* @include media-breakpoint-up(sm) {
+  .circleImg {
+  max-width: 30rem;
+  }
+} */
+
+@include media-breakpoint-up(md) {
+
+  h1 {
+    font: 800 4rem "Solway", "Trebuchet MS", sans-serif;
+  }
+
+  h2 {
+    font: 800 3rem "Solway", "Trebuchet MS", sans-serif;
+  }
+
+  h3 {
+    font: 700 2.5rem "Ubuntu", "Tahoma", sans-serif;
+  }
+
+  h4 {
+    font: 300 1.5rem "Ubuntu", "Tahoma", sans-serif;
+  }
+
+  h5 {
+    font: 400 1.25rem "Ubuntu", "Tahoma", sans-serif;
+  }
+
+  h6 {
+    font: 500 1rem "Ubuntu", "Tahoma", sans-serif;
+  }
+
+  .textEm {
+    font: 300 1.25rem "Ubuntu", "Tahoma", sans-serif;
+  }
+
+  nav {
+    margin: 0 1rem;
+    .navbar-brand {
+      padding: 0;
+
+      img {
+        height: 5rem !important;
+        margin: 1rem;
+      }
+    }
+  }
+
+  .hero {
+    img {
+      display: block;
+    }
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .imgInfo {
+    flex-direction: row;
+    .circleImg {
+      width: auto;
+      min-width: 25rem;
+    }
+    .info {
+      margin: 0 0 0 4rem;
+
+    }
+  }
+
+  .flechas {
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 16px;
+  }
+
+  nav .iconLogo {
+    display: block !important;
+  }
+  
+  .iconFlag{
+    width: 50% !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  nav > div {
+    padding: 0 5% !important;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  nav > div {
+    padding: 0 10% !important;
+  }
 }
