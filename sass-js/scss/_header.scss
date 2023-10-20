@@ -1,0 +1,61 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    nav {
+      width: 100%;
+      margin: 0 0.5rem;
+      .navbar-brand img {
+        height: 3rem;
+      }
+      .nav-link.active {
+        color: $primary !important;
+        .iconLogo {
+          opacity: 1;
+          filter: invert(23%) sepia(47%) saturate(2142%) hue-rotate(202deg)
+            brightness(63%) contrast(92%) opacity(50%);
+        }
+      }
+      .nav-link {
+        text-align: right;
+        &:hover {
+          color: $primary !important;
+          .iconLogo {
+            opacity: 1;
+          }
+        }
+        &:active {
+          color: $primary !important;
+          .iconLogo {
+            opacity: 1;
+            filter: invert(23%) sepia(47%) saturate(2142%) hue-rotate(202deg)
+              brightness(63%) contrast(92%) opacity(50%);
+          }
+        }
+        .iconLogo {
+          display: none;
+          margin: 0 auto;
+          width: 2rem;
+          height: 1rem;
+          background-image: url("../assetts/sol.svg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .bgImgIndex {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
+      url(../assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg);
+    background-size: cover;
+    background-position: right top;
+    height: 32rem;
+  }
+
+  
