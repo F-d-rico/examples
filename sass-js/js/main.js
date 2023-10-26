@@ -15,19 +15,42 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
     new bootstrap.Popover(popover)
   }) */
 
-const video = document.querySelector('#videoMides')
-const videoHandler = document.querySelector('#videoHandler')
-const videoIcon = document.querySelector('#videoHandler>i')
+const video = document.querySelector('.video');
+const videoHandler = document.querySelector('.videoHandler');
+const iconVideoPlay = document.querySelector('.iconVideoPlay');
+video.addEventListener("click", playPause);
+videoHandler.addEventListener("click", playPause);
 
-videoHandler.addEventListener("click", playPause)
-video.addEventListener("click", playPause)
+function playPause () { 
+  if (video.paused) {
+    video.play();
+    iconVideoPlay.className = "bi bi-pause-circle";
+    videoHandler.title = "Pausar video";
+    videoHandler.setAttribute("data-state", "pause");
+  } else {
+    video.pause(); 
+    iconVideoPlay.className = "bi bi-play-circle";
+    videoHandler.title = "Reproducir video";
+    videoHandler.setAttribute("data-state", "play");
+  }
+}
+/* const videoTestimonio = document.querySelector('#videoMides');
+const videoHandler = document.querySelector('#testimonioHandler');
+const videoIcon = document.querySelector('#testimonioHandler>i');
+videoTestimonio.addEventListener("click", () => playPause(videoTestimonio));
+videoHandler.addEventListener("click", () => playPause(videoTestimonio));
 
-function playPause() { 
+function playPause(video) { 
   if (video.paused) {
     video.play();
     videoIcon.className = "bi bi-pause-circle";
+    videoHandler.title = "Pausar video";
+    videoHandler.setAttribute("data-state", "pause");
   } else {
     video.pause(); 
     videoIcon.className = "bi bi-play-circle";
+    videoHandler.title = "Reproducir video";
+    videoHandler.setAttribute("data-state", "play");
   }
-} 
+}
+ */

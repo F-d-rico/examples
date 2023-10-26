@@ -29,7 +29,7 @@ $enable-shadows: true;
 
 $enable-negative-margins: true;
 
-$carousel-transition-duration:       1.5s;
+$carousel-transition-duration: 1.5s;
 
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); //
 
@@ -48,7 +48,7 @@ $container-max-widths: (
 
 // Customize some defaults
 $body-color: #222;
-$body-bg: #fafafa;
+$body-bg: #f7f5f2;
 $border-radius: 0.4rem;
 $primary: #244a9a;
 $red: #e6223d;
@@ -58,6 +58,10 @@ $yellow: #fe9933;
 $font-family-base: "Ubuntu", Tahoma, sans-serif;
 
 $btn-border-radius: 2rem;
+$btn-border-width: 0.125rem;
+$btn-padding-x: 1.25rem;
+$btn-padding-y: 0.75rem;
+
 $card-border-radius: 1rem;
 
 // Required
@@ -146,8 +150,7 @@ h5 {
 }
 
 h6,
-.info a.btn,
-.card-footer a {
+a.btn {
   font: 500 1rem/1.5rem "Ubuntu", "Tahoma", sans-serif;
 }
 
@@ -181,6 +184,7 @@ header {
     }
     .nav-link.active {
       color: $primary !important;
+      font-weight: 700;
       .iconLogo {
         opacity: 1;
         filter: invert(23%) sepia(47%) saturate(2142%) hue-rotate(202deg)
@@ -262,6 +266,40 @@ header {
   }
 }
 
+.bgImgIndex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
+    url(../assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg);
+  background-size: cover;
+  background-position: right top;
+  height: 32rem;
+}
+
+.bgImgNosotros {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
+    url(../assetts/img/sinLimites/@alvaroportillos-32.png);
+  background-size: cover;
+  background-position: 25% 20%;
+  height: 32rem;
+}
+
+.bgImgTrayectorias {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, $red, rgba(255, 255, 255, 0)),
+    url(../assetts/img/trayectoria/@alvaroportillos-502.png);
+  background-size: cover;
+  background-position: center top;
+  height: 32rem;
+  width: 105%;
+}
+
 .heading {
   margin: 6rem auto;
   text-align: center;
@@ -286,12 +324,22 @@ header {
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
+    margin-bottom: 2rem;
+    img {
+      height: 100%;
+    }
   }
   .info {
     margin: 2rem;
     h3,
     p {
       margin-bottom: 2rem;
+    }
+    h4 {
+      color: $red;
+    }
+    li {
+      margin-bottom: 1rem;
     }
     .iconsInfo {
       display: flex;
@@ -321,67 +369,178 @@ header {
   width: 80%;
   margin: 0 auto;
   margin-top: -3rem;
-  .card{
+  .card {
     width: 100%;
     margin-bottom: 1rem;
-    &:last-child{
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.gridValores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  div {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    img {
+      margin-bottom: 1rem;
+      height: 5rem;
+    }
+    h5 {
+      margin-bottom: 1rem;
+      color: $primary;
+    }
+  }
+}
+
+.gridIndicadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  div {
+    width: 50%;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    img {
+      margin-bottom: 1rem;
+      height: 5rem;
+    }
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.objetivos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin: 4rem auto;
+  div {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    img {
+      height: 6rem;
+    }
+  }
+}
+
+.fundamentales {
+  margin: 6rem auto;
+  h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .gridFundamentales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div {
+      margin: 2rem;
+      width: 100%;
+      h4 {
+        margin: 1rem 0;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  >div {
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    img {
+      width: 8rem;
+      border-radius: 50%;
+    }
+    .estrellas i {
+      width: .5rem;
+      color: $primary;
+      opacity: .3;
+      margin: 1rem .5rem;
+    }
+    q {
+      text-align: start;
+      padding: 0 .5rem;
+    }
+    h4 {
+      color: $red;
+    }
+    h5 {
+      color: $primary;
+    }
+    *{
+      margin-bottom: 2rem;
+    }
+    &:last-child {
       display: none;
     }
   }
 }
 
 
+
 .colaboradores {
   background-image: url(../assetts/TexturaPira.svg);
-  background-size: 6rem;
-  padding: 4rem 0;
-  margin: 0 auto;
-  article {
-    background-color: white;
-    border-radius: 2rem;
-    padding: 4rem 2rem;
-    width: 90%;
-    h3 {
-      text-align: center;
-      margin: 0 0;
+}
+
+.valores {
+  background-image: url(../assetts/texturaOndas.svg);
+}
+
+.trayectorias.bgFrame {
+  background-image: url(../assetts/texturaDiana.svg);
+  .lista{
+    li:before {
+      background-color: $red;
     }
   }
-   .carousel {
-    margin: 0 0;
+}
+
+.trayectorias.container {
+  h2,h3 {
+    margin-bottom: 2rem;
   }
-  
-  .carousel-indicators {
-    bottom: -4rem;
-      button {
-      width: .8rem;
-      height: .8rem;
-      border-radius: 50%;
-      background-color: $primary;
-      margin: 1rem;
-    }
+  p {
+    margin-bottom: 6rem;
   }
-  .carousel-item {
-    overflow: hidden;
-    background-color: white;
-    border-radius: 2rem;
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      background-color: none;
-      margin: 2rem auto;
-    }
-    .item {
-      margin: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      min-height: 5rem;
-      img {
-        max-height: 5rem;
-        max-width: 8rem;
-      }
-    }
+}
+
+
+.videoFrame {
+  width: 90%;
+  margin: 6rem auto;
+  video {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    color: $primary;
+    margin-left: 2rem;
   }
 }
 
@@ -392,20 +551,20 @@ header {
   align-items: center;
   video {
     width: 80%;
+    max-width: 25rem;
     border-radius: 50%;
     border: none;
-    }
-  
+  }
   div {
-    padding-left: 1rem;
+    padding-left: 1.25rem;
     width: 80%;
   }
   button {
     border: none;
-    padding: .5rem;
-    margin-left: -.5rem;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
     color: $primary;
-    &:hover{
+    &:hover {
       color: $body-color;
     }
     i {
@@ -415,7 +574,8 @@ header {
   h3 {
     color: $red;
   }
-  h4, h5 {
+  h4,
+  h5 {
     color: $primary;
   }
 }
@@ -427,11 +587,9 @@ section:has(.videoTestimonio) {
   }
 }
 
+
 .seccionCierre:has(.seccionSocial) {
   background-image: url(../assetts/texturaNube.svg);
-  h3, p {
-    margin-bottom: 2rem;
-  }
 }
 
 .seccionCierre {
@@ -444,11 +602,13 @@ section:has(.videoTestimonio) {
     background-color: white;
     border-radius: 2rem;
     text-align: center;
-    padding: 3rem;
+    padding: 3rem 1rem;
+    h3,
+    p {
+      margin-bottom: 2rem;
+    }
   }
 }
-
-
 
 footer {
   display: flex;
@@ -470,46 +630,124 @@ footer {
       order: 3;
       width: 100%;
       margin: 1rem 0;
-      font-size: .8rem;
+      font-size: 0.8rem;
       text-align: center;
     }
     i {
       font-size: 1.25rem;
-      padding: .5rem;
+      padding: 0.5rem;
       color: white;
       &:hover {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
   }
 }
 
-.bgImgIndex {
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
-    url(../assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg);
-  background-size: cover;
-  background-position: right top;
-  height: 32rem;
+.carousel {
+  margin: 0 0;
+  .carousel-indicators {
+    bottom: -4rem;
+    button {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background-color: $primary;
+      margin: 1rem;
+    }
+  }
+  .carousel-item {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 2rem;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: none;
+      margin: 2rem auto;
+    }
+    .item {
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      min-height: 5rem;
+      img {
+        max-height: 5rem;
+        max-width: 8rem;
+      }
+    }
+  }
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    counter-reset: item;
+    margin: 0 auto;
+    padding-left: 1rem;
+  li {
+    counter-increment: item;
+    margin: 2rem 0;
+    font: 300 1.3rem "Ubuntu", "Tahoma", sans-serif;
+    color: $primary;
+    width: 100%;
+  }
+  li:before {
+    margin-right: 1rem;
+    content: counter(item);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    width: 2.75rem;
+    padding: .5rem;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+.bgFrame {
+  background-size: 6rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+  article {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+    width: 90%;
+    >h3, >p {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.imgFrame {
+  border-radius: 2rem;
+  max-height: 40rem;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
 }
 
 .card {
   border: none;
-  a {
-    text-decoration: none;
-    &:hover {
-      opacity: .7;
-    }
-  }
-  .card-img-top{
+
+  text-decoration: none;
+
+  .card-img-top {
     border-radius: 1rem;
   }
   .card-body {
     padding: 1rem 0;
     .card-title {
       color: $primary;
+      &:hover {
+        opacity: 0.7;
+      }
     }
     .card-text {
       overflow: hidden;
@@ -529,15 +767,21 @@ footer {
     p {
       margin-bottom: 0;
     }
+    h6 {
+      color: $primary;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 }
 
 .badge {
   display: inline-block;
   color: $body-bg;
-  font: 500 .8rem/1rem "Ubuntu", "Tahoma", sans-serif;
+  font: 500 0.8rem/1rem "Ubuntu", "Tahoma", sans-serif;
   border-radius: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
 }
 
@@ -573,29 +817,58 @@ footer {
   transform-origin: center;
 }
 
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @include media-breakpoint-up(sm) {
-/*   .circleImg {
-  max-width: 30rem;
-  } */
+  .circleImg {
+  max-width: 25rem;
+  }
 
   .gridCards {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    margin-top: -3rem;
-    .card{
+    .card {
       width: 47.5%;
       margin-bottom: 0;
     }
   }
 
+  .gridValores {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    div {
+      width: 45%;
+    }
+  }
+
+  .fundamentales .gridFundamentales {
+    margin: 0 2rem;
+    div {
+      margin: 2rem 0;
+      width: 46%;
+    }
+  }
+
+  .testimonios > div {
+    width: 70%;
+    }
+
+  .videoTestimonio video {
+    max-width: none;
+    width: 60%;
+  }
+
   .seccionCierre {
     width: 100%;
+  }
+
+  .lista {
+    width: 60%;
   }
 
   footer > div p {
@@ -603,9 +876,20 @@ footer {
     width: initial;
   }
 
+  .videoFrame {
+    width: 100%;
+    position: relative;
+    video {
+      border-radius: 2rem;
+    }
+    h3 {
+      position: absolute;
+      bottom: 20%;
+      width: 40%;
+      color: white;
+    }
+  }
 }
-
-
 
 @include media-breakpoint-up(md) {
   h1 {
@@ -660,8 +944,8 @@ footer {
   .imgInfo {
     flex-direction: row;
     .circleImg {
-      /*       width: auto; */
-      min-width: 25rem;
+      min-width: 26rem;
+      max-width: none;
     }
     .info {
       margin: 0 0 0 4rem;
@@ -679,35 +963,70 @@ footer {
     }
   }
 
-  .colaboradores {
+  .bgFrame {
     padding: 6rem 0;
-    .carousel-item {
-      .wrapper {
-        flex-direction: row;
-      }
+  }
+
+
+  .carousel .carousel-item {
+    .wrapper {
+      flex-direction: row;
     }
   }
+
+
 
   .videoTestimonio {
     flex-direction: row;
     align-items: center;
     video {
       width: 48%;
-      border-radius: 50%;
-      border: none;
-      }
-    
+    }
     div {
-      padding-left: 1rem;
       width: 48%;
     }
   }
 
+  .objetivos {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 8rem auto;
+    div {
+      max-width: 16rem;
+      width: 30%;
+      h3,
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .testimonios {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    > div {
+    width: 45%;
+    }
+  }
+
+
   .seccionCierre {
-    padding: 5rem;
+    padding: 5rem 4.5rem;
     width: 100%;
     article {
-      padding: 4rem;
+      padding: 4rem 1rem;
+    }
+  }
+
+
+  .lista {
+    width: 100%;
+    margin: 0;
+    padding-left: 2rem;
+    li {
+      width: 50%;
     }
   }
 
@@ -716,10 +1035,6 @@ footer {
     display: block;
   }
 }
-
-
-
-
 
 @include media-breakpoint-up(lg) {
   html {
@@ -737,20 +1052,55 @@ footer {
   .gridCards {
     .card {
       width: 30%;
-      &:last-child{
+      &:last-child {
         display: block;
       }
     }
   }
 
-  .colaboradores {
+  .gridValores {
+    justify-content: space-evenly;
+    div {
+      width: 30%;
+    }
+  }
+
+  .gridIndicadores {
+    div {
+      width: 25%;
+    }
+  }
+
+  .fundamentales .gridFundamentales {
+    div {
+      width: 30%;
+    }
+  }
+
+  .testimonios > div {
+    width: 30%;
+    q {
+      font-size: .8rem;
+    }
+    &:last-child {
+      display: flex;
+    }
+  }
+
+  .bgFrame {
     padding: 8rem 0;
     h3 {
       margin: 2rem 0;
     }
+  }
+
+
+
+  .carousel {
+    margin: 4rem 0;
     .carousel-indicators {
       bottom: -6rem;
-        button {
+      button {
         width: 1rem;
         height: 1rem;
         border-radius: 50%;
@@ -758,12 +1108,9 @@ footer {
         margin: 1rem;
       }
     }
-    .carousel {
-      margin: 4rem 0;
-    }
     .carousel-item {
       .item {
-          min-height: 6rem;        
+        min-height: 6rem;
         img {
           max-height: 6rem;
           max-width: 10rem;
@@ -772,8 +1119,18 @@ footer {
     }
   }
 
+  .videoTestimonio {
+    video {
+      width: 36%;
+      margin-left: 4rem;
+    }
+    div {
+      width: 54%;
+    }
+  }
+
   .seccionCierre {
-    padding: 8rem;
+    padding: 6rem 5rem;
   }
 
   footer > div {
@@ -786,6 +1143,15 @@ footer {
 @include media-breakpoint-up(xl) {
   nav > div {
     padding: 0 5% !important;
+  }
+  .gridValores {
+    justify-content: space-between;
+    div {
+      width: 19%;
+    }
+  }
+  .seccionCierre {
+    padding: 8rem;
   }
 }
 
