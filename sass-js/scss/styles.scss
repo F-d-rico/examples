@@ -51,11 +51,17 @@ $body-color: #222;
 $body-bg: #f7f5f2;
 $border-radius: 0.4rem;
 $primary: #244a9a;
+$primary: #244a9a;
 $red: #e6223d;
 $orange: #e15317;
 $yellow: #fe9933;
 
 $font-family-base: "Ubuntu", Tahoma, sans-serif;
+
+$navbar-light-toggler-border-color: $primary;
+$navbar-light-icon-color: $primary;
+
+$input-placeholder-color: rgba($body-color, 0.75);
 
 $btn-border-radius: 2rem;
 $btn-border-width: 0.125rem;
@@ -90,17 +96,17 @@ $card-border-radius: 1rem;
 // @import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
-@import "bootstrap/scss/alert";
+// @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/list-group";
-//@import "bootstrap/scss/close";
+// @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-//@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
-//@import "bootstrap/scss/popover";
+// @import "bootstrap/scss/popover";
 @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
-//@import "bootstrap/scss/offcanvas"; // Requires transitions
+// @import "bootstrap/scss/offcanvas"; // Requires transitions
 @import "bootstrap/scss/placeholders";
 
 // Helpers
@@ -176,11 +182,23 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: $body-bg;
+  z-index: 10;
   nav {
     width: 100%;
     margin: 0 0.5rem;
     .navbar-brand img {
       height: 3rem;
+    }
+    .navbar-toggler{
+     /*  background-color: $primary; */
+    border: solid .2rem $primary;
+    margin-right: 1.5rem;
+    }
+    .navbar-nav {
+      margin-right: 2rem;
     }
     .nav-link.active {
       color: $primary !important;
@@ -223,6 +241,8 @@ header {
 }
 
 .hero {
+  position: relative;
+  top: 5.5rem;
   h1 {
     max-width: 40rem;
     margin-bottom: 8rem;
@@ -293,9 +313,57 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $red, rgba(255, 255, 255, 0)),
-    url(../assetts/img/trayectoria/@alvaroportillos-502.png);
+    url(../assetts/img/trayectorias/@alvaroportillos-502.png);
   background-size: cover;
   background-position: center top;
+  height: 32rem;
+  width: 105%;
+}
+
+.bgImgSinLimites {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, $yellow, rgba(255, 255, 255, 0)),
+    url(../assetts/img/sinLimites/@alvaroportillos-501.png);
+  background-size: cover;
+  background-position: center 12%;
+  height: 32rem;
+  width: 105%;
+}
+
+.bgImgSocial {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, rgba($primary, 0.5), rgba(255, 255, 255, 0)),
+    url(../assetts/img/fundacion/fundacion01.png);
+  background-size: cover;
+  background-position: center center;
+  height: 32rem;
+  width: 105%;
+}
+
+.bgImgNoticias {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
+    url(../assetts/img/sinLimites/@alvaroportillos-34.png);
+  background-size: cover;
+  background-position: center 12%;
+  height: 32rem;
+  width: 105%;
+}
+
+.bgImgContacto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
+    url(../assetts/img/trayectorias/20230921_105443.png);
+  background-size: cover;
+  background-position: center 12%;
   height: 32rem;
   width: 105%;
 }
@@ -512,6 +580,15 @@ header {
   background-image: url(../assetts/texturaOndas.svg);
 }
 
+.sinLimites {
+  background-image: url(../assetts/texturaSol.svg);
+  .lista{
+    li:before {
+      background-color: $yellow;
+    }
+  }
+}
+
 .trayectorias.bgFrame {
   background-image: url(../assetts/texturaDiana.svg);
   .lista{
@@ -535,6 +612,7 @@ header {
   width: 90%;
   margin: 6rem auto;
   video {
+    border-radius: 1rem;
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -594,10 +672,10 @@ section:has(.videoTestimonio) {
 
 .seccionCierre {
   background-size: 4rem;
-  padding: 3rem;
+  padding: 2rem;
   margin: 0 auto;
   border-radius: 2rem 2rem 0 0;
-  width: 90%;
+  width: 95%;
   article {
     background-color: white;
     border-radius: 2rem;
@@ -640,6 +718,23 @@ footer {
       &:hover {
         opacity: 0.6;
       }
+    }
+  }
+}
+
+form {
+  text-align: start;
+  margin: 3rem auto !important;
+  > div {
+    label, div {
+      padding-left: .5rem;
+      font-size: .9rem;
+    }
+    input, textarea {
+      border: solid .2rem $primary !important;
+    }
+    button {
+      margin-top: 2rem;
     }
   }
 }
@@ -689,8 +784,11 @@ footer {
     margin: 0 auto;
     padding-left: 1rem;
   li {
+    display: flex;
+    align-items: center;
     counter-increment: item;
     margin: 2rem 0;
+    padding-left: 2rem;
     font: 300 1.3rem "Ubuntu", "Tahoma", sans-serif;
     color: $primary;
     width: 100%;
@@ -702,7 +800,7 @@ footer {
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
-    width: 2.75rem;
+    min-width: 2.75rem;
     padding: .5rem;
     text-align: center;
     display: inline-block;
@@ -712,7 +810,7 @@ footer {
 .bgFrame {
   background-size: 6rem;
   padding: 4rem 0;
-  margin: 0 auto;
+  margin: 6rem auto;
   article {
     background-color: white;
     border-radius: 2rem;
@@ -807,6 +905,11 @@ footer {
   display: none;
 }
 
+.testimonios ~ .destello,
+.destello:has(~.testimonios) {
+  display: block;
+}
+
 .mirror {
   transform: scale(-1, 1);
   transform-origin: center;
@@ -864,6 +967,7 @@ footer {
   }
 
   .seccionCierre {
+    padding: 3rem;
     width: 100%;
   }
 
@@ -879,6 +983,7 @@ footer {
   .videoFrame {
     width: 100%;
     position: relative;
+    margin: 8rem auto;
     video {
       border-radius: 2rem;
     }
@@ -933,6 +1038,7 @@ footer {
   }
 
   .hero {
+    top: 8rem;
     img {
       display: block;
     }
@@ -957,8 +1063,11 @@ footer {
     .info {
       margin: 0 4rem 0 0;
       text-align: end;
-      .iconFlag {
-        text-align: start;
+      .iconsInfo {
+        justify-content: flex-end;
+        .iconFlag {
+          text-align: start;
+        }
       }
     }
   }
@@ -1016,7 +1125,7 @@ footer {
     padding: 5rem 4.5rem;
     width: 100%;
     article {
-      padding: 4rem 1rem;
+      padding: 4rem 4rem;
     }
   }
 
@@ -1035,6 +1144,8 @@ footer {
     display: block;
   }
 }
+
+
 
 @include media-breakpoint-up(lg) {
   html {
