@@ -51,7 +51,7 @@ $body-color: #222;
 $body-bg: #f7f5f2;
 $border-radius: 0.4rem;
 $primary: #244a9a;
-$primary: #244a9a;
+$info: #00afdf;
 $red: #e6223d;
 $orange: #e15317;
 $yellow: #fe9933;
@@ -62,6 +62,8 @@ $navbar-light-toggler-border-color: $primary;
 $navbar-light-icon-color: $primary;
 
 $input-placeholder-color: rgba($body-color, 0.75);
+
+$form-select-indicator-color: $primary;
 
 $btn-border-radius: 2rem;
 $btn-border-width: 0.125rem;
@@ -176,26 +178,46 @@ a.btn {
   box-shadow: 0.3rem 0.3rem 0.3rem rgba($body-color, 0.3);
 }
 
+.bg-red {
+  background-color: $red;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-info {
+  background-color: $info;
+}
+
 // Component
 
 header {
   width: 100%;
   display: flex;
   align-items: center;
+  /*   SI LO HAGO FIXED DESCOMENTAR HEROs y chequear toggle margin
   position: fixed;
   top: 0;
   background-color: $body-bg;
-  z-index: 10;
+  z-index: 10; */
   nav {
     width: 100%;
-    margin: 0 0.5rem;
-    .navbar-brand img {
-      height: 3rem;
+    /*     margin: 0 0.5rem; */
+    .navbar-brand {
+      padding: 0.5rem;
+      img {
+        height: 3.5rem;
+      }
     }
-    .navbar-toggler{
-     /*  background-color: $primary; */
-    border: solid .2rem $primary;
-    margin-right: 1.5rem;
+    .navbar-toggler {
+      /*  background-color: $primary; */
+      border: solid 0.2rem $primary;
+      margin-right: 0.5rem;
     }
     .navbar-nav {
       margin-right: 2rem;
@@ -211,6 +233,7 @@ header {
     }
     .nav-link {
       text-align: right;
+      margin: 0 .3rem;
       &:hover {
         color: $primary !important;
         .iconLogo {
@@ -241,8 +264,8 @@ header {
 }
 
 .hero {
-  position: relative;
-  top: 5.5rem;
+  /*   position: relative;
+  top: 5.5rem; */
   h1 {
     max-width: 40rem;
     margin-bottom: 8rem;
@@ -286,12 +309,18 @@ header {
   }
 }
 
+.hero .bgImgPost {
+  h1 {
+    margin-bottom: 3.5rem;
+  }
+}
+
 .bgImgIndex {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
-    url(../assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg);
+    url(../assetts/img/fundacion/@sanantoniostudio.com.uy-155.webp);
   background-size: cover;
   background-position: right top;
   height: 32rem;
@@ -302,7 +331,7 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
-    url(../assetts/img/sinLimites/@alvaroportillos-32.png);
+    url(../assetts/img/sinLimites/@alvaroportillos-32.webp);
   background-size: cover;
   background-position: 25% 20%;
   height: 32rem;
@@ -313,7 +342,7 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $red, rgba(255, 255, 255, 0)),
-    url(../assetts/img/trayectorias/@alvaroportillos-502.png);
+    url(../assetts/img/trayectorias/@alvaroportillos-502.webp);
   background-size: cover;
   background-position: center top;
   height: 32rem;
@@ -325,7 +354,7 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $yellow, rgba(255, 255, 255, 0)),
-    url(../assetts/img/sinLimites/@alvaroportillos-501.png);
+    url(../assetts/img/sinLimites/@alvaroportillos-501.webp);
   background-size: cover;
   background-position: center 12%;
   height: 32rem;
@@ -336,8 +365,8 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  background-image: linear-gradient(to right, rgba($primary, 0.5), rgba(255, 255, 255, 0)),
-    url(../assetts/img/fundacion/fundacion01.png);
+  background-image: linear-gradient(to right, $info, rgba(255, 255, 255, 0)),
+    url(../assetts/img/fundacion/fundacion01.webp);
   background-size: cover;
   background-position: center center;
   height: 32rem;
@@ -349,10 +378,22 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
-    url(../assetts/img/sinLimites/@alvaroportillos-34.png);
+    url(../assetts/img/sinLimites/@alvaroportillos-34.webp);
   background-size: cover;
   background-position: center 12%;
   height: 32rem;
+  width: 105%;
+}
+
+.bgImgPost {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
+    url(../assetts/img/sinLimites/@alvaroportillos-34.webp);
+  background-size: cover;
+  background-position: center 25%;
+  height: 16rem;
   width: 105%;
 }
 
@@ -361,7 +402,7 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
-    url(../assetts/img/trayectorias/20230921_105443.png);
+    url(../assetts/img/trayectorias/20230921_105443.webp);
   background-size: cover;
   background-position: center 12%;
   height: 32rem;
@@ -430,7 +471,7 @@ header {
   }
 }
 
-.gridCards {
+#gridCards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -490,6 +531,18 @@ header {
   }
 }
 
+#gridNoticias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 4rem auto;
+  .card {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+
 .objetivos {
   display: flex;
   flex-direction: column;
@@ -531,7 +584,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  >div {
+  > div {
     width: 80%;
     padding: 1rem;
     display: flex;
@@ -546,14 +599,14 @@ header {
       border-radius: 50%;
     }
     .estrellas i {
-      width: .5rem;
+      width: 0.5rem;
       color: $primary;
-      opacity: .3;
-      margin: 1rem .5rem;
+      opacity: 0.3;
+      margin: 1rem 0.5rem;
     }
     q {
       text-align: start;
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
     }
     h4 {
       color: $red;
@@ -561,7 +614,7 @@ header {
     h5 {
       color: $primary;
     }
-    *{
+    * {
       margin-bottom: 2rem;
     }
     &:last-child {
@@ -569,8 +622,6 @@ header {
     }
   }
 }
-
-
 
 .colaboradores {
   background-image: url(../assetts/TexturaPira.svg);
@@ -582,7 +633,7 @@ header {
 
 .sinLimites {
   background-image: url(../assetts/texturaSol.svg);
-  .lista{
+  .lista {
     li:before {
       background-color: $yellow;
     }
@@ -591,7 +642,7 @@ header {
 
 .trayectorias.bgFrame {
   background-image: url(../assetts/texturaDiana.svg);
-  .lista{
+  .lista {
     li:before {
       background-color: $red;
     }
@@ -599,14 +650,92 @@ header {
 }
 
 .trayectorias.container {
-  h2,h3 {
+  h2,
+  h3 {
     margin-bottom: 2rem;
   }
-  p {
+  h2 + p {
     margin-bottom: 6rem;
   }
 }
 
+.noticias {
+  margin: 4rem auto;
+  #filtros {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba($primary, 0.2);
+    margin: -4rem auto 0 auto;
+    border-radius: 2rem;
+    width: 90%;
+  }
+  select,
+  input {
+    width: 80%;
+    border: solid 0.1rem $primary;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(23%) sepia(47%) saturate(2142%) hue-rotate(202deg)
+      brightness(75%) contrast(92%);
+  }
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  #post {
+    margin: 3rem 1rem;
+    .catFecha {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    > * {
+      margin: 0 0.5rem 2rem 0.5rem;
+    }
+    img {
+      width: 100%;
+      max-height: 40rem;
+      object-fit: contain;
+      border-radius: 1rem;
+      margin: 0 0 3rem 0rem;
+    }
+  }
+  h4 {
+    margin: 2rem 0;
+    color: rgba($body-color, .6);
+  }
+/*   h4:not(+div a) {
+    display: none;
+  } */
+  #gridSimilares {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    a {
+      width: 48%;
+      &:nth-of-type(3) {
+        display: none;
+      }
+      .badge,
+      h6 {
+        display: none;
+      }
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+}
 
 .videoFrame {
   width: 90%;
@@ -665,13 +794,12 @@ section:has(.videoTestimonio) {
   }
 }
 
-
 .seccionCierre:has(.seccionSocial) {
   background-image: url(../assetts/texturaNube.svg);
 }
 
 .seccionCierre {
-  background-size: 4rem;
+  background-size: 8rem;
   padding: 2rem;
   margin: 0 auto;
   border-radius: 2rem 2rem 0 0;
@@ -694,6 +822,7 @@ footer {
   min-height: 10rem;
   background-color: $primary;
   padding: 3rem 1rem;
+  box-shadow: 0.3rem -0.3rem 0.3rem rgba($body-color, 0.3);
   > div {
     display: flex;
     flex-wrap: wrap;
@@ -726,12 +855,15 @@ form {
   text-align: start;
   margin: 3rem auto !important;
   > div {
-    label, div {
-      padding-left: .5rem;
-      font-size: .9rem;
+    label,
+    div {
+      padding-left: 0.5rem;
+      font-size: 0.9rem;
     }
-    input, textarea {
-      border: solid .2rem $primary !important;
+    input,
+    textarea {
+      border: solid 0.2rem $primary !important;
+      cursor: pointer;
     }
     button {
       margin-top: 2rem;
@@ -777,12 +909,12 @@ form {
 }
 
 .lista {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    counter-reset: item;
-    margin: 0 auto;
-    padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  counter-reset: item;
+  margin: 0 auto;
+  padding-left: 1rem;
   li {
     display: flex;
     align-items: center;
@@ -801,14 +933,14 @@ form {
     font-weight: 600;
     color: white;
     min-width: 2.75rem;
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
     display: inline-block;
   }
 }
 
 .bgFrame {
-  background-size: 6rem;
+  background-size: 8rem;
   padding: 4rem 0;
   margin: 6rem auto;
   article {
@@ -816,7 +948,8 @@ form {
     border-radius: 2rem;
     padding: 4rem 2rem;
     width: 90%;
-    >h3, >p {
+    > h3,
+    > p {
       text-align: center;
       margin-bottom: 2rem;
     }
@@ -838,6 +971,8 @@ form {
 
   .card-img-top {
     border-radius: 1rem;
+    aspect-ratio: 4/3;
+    object-fit: cover;
   }
   .card-body {
     padding: 1rem 0;
@@ -906,7 +1041,7 @@ form {
 }
 
 .testimonios ~ .destello,
-.destello:has(~.testimonios) {
+.destello:has(~ .testimonios) {
   display: block;
 }
 
@@ -925,10 +1060,10 @@ form {
 
 @include media-breakpoint-up(sm) {
   .circleImg {
-  max-width: 25rem;
+    max-width: 25rem;
   }
 
-  .gridCards {
+  #gridCards {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -949,6 +1084,17 @@ form {
     }
   }
 
+  #gridNoticias {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 6rem auto;
+    .card {
+      width: 47.5%;
+    }
+  }
+
   .fundamentales .gridFundamentales {
     margin: 0 2rem;
     div {
@@ -959,7 +1105,7 @@ form {
 
   .testimonios > div {
     width: 70%;
-    }
+  }
 
   .videoTestimonio video {
     max-width: none;
@@ -1038,7 +1184,7 @@ form {
   }
 
   .hero {
-    top: 8rem;
+    /*     top: 8rem; */
     img {
       display: block;
     }
@@ -1050,7 +1196,7 @@ form {
   .imgInfo {
     flex-direction: row;
     .circleImg {
-      min-width: 26rem;
+      min-width: 22rem;
       max-width: none;
     }
     .info {
@@ -1076,14 +1222,14 @@ form {
     padding: 6rem 0;
   }
 
-
   .carousel .carousel-item {
     .wrapper {
       flex-direction: row;
+      .item.noShow {
+        display: none;
+      }
     }
   }
-
-
 
   .videoTestimonio {
     flex-direction: row;
@@ -1116,10 +1262,52 @@ form {
     justify-content: space-evenly;
     align-items: flex-start;
     > div {
-    width: 45%;
+      width: 45%;
     }
   }
 
+  .noticias #filtros {
+    margin: 4rem 0;
+    width: 100%;
+    select,
+    input {
+      width: 25%;
+    }
+    button {
+      margin-top: 0;
+    }
+  }
+
+  .post {
+    flex-direction: row;
+    justify-content: space-between;
+    #post {
+      margin: 6rem 0;
+      width: 70%;
+      img {
+        border-radius: 2rem;
+      }
+    }
+    h4 {
+      margin: 2rem 0;
+    }
+    aside {
+      margin-top: 5.5rem;
+      width: 18%;
+      #gridSimilares {
+        flex-direction: column;
+        a {
+          width: 100%;
+          display: block;
+          margin-bottom: 2rem;
+          .badge,
+          h6 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 
   .seccionCierre {
     padding: 5rem 4.5rem;
@@ -1128,7 +1316,6 @@ form {
       padding: 4rem 4rem;
     }
   }
-
 
   .lista {
     width: 100%;
@@ -1156,11 +1343,15 @@ form {
     display: block !important;
   }
 
+  .imgInfo .circleImg {
+      min-width: 26rem;
+    }
+
   .iconFlag {
     width: 50% !important;
   }
 
-  .gridCards {
+  #gridCards {
     .card {
       width: 30%;
       &:last-child {
@@ -1191,7 +1382,7 @@ form {
   .testimonios > div {
     width: 30%;
     q {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
     &:last-child {
       display: flex;
@@ -1204,8 +1395,6 @@ form {
       margin: 2rem 0;
     }
   }
-
-
 
   .carousel {
     margin: 4rem 0;

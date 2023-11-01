@@ -16,8 +16,8 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg shadowB">
+  <header class="shadowB">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="./assetts/logoFundacion.png" alt="ir al home de Fundación Tienda Inglesa" />
@@ -83,7 +83,7 @@
 
     <article class="imgInfo">
       <div class="circleImg shadowY">
-        <img src="./assetts/img/trayectorias/@alvaroportillos-502.png"
+        <img src="./assetts/img/trayectorias/@alvaroportillos-502.webp"
           alt="Egresada del programa Trayectorias, trabajando en Tienda Inglesa" />
       </div>
 
@@ -119,7 +119,7 @@
 
     <article class="imgInfo reverse">
       <div class="circleImg shadowY">
-        <img src="./assetts/img/sinLimites/sinLimitesArocena.png"
+        <img src="./assetts/img/sinLimites/sinLimitesArocena.webp"
           alt="Egresada del programa Trayectorias, trabajando en Tienda Inglesa" />
       </div>
       <div class="info">
@@ -154,50 +154,8 @@
           quam quam ac. Interdum a vel id consequat. Egestas sagittis mollis in tristique.
         </p>
       </div>
-      <!-- Hacer dinamico -->
-      <div class="gridCards">
-        <a href="noticias.html" class="card" aria-label="link card">
-          <img src="./assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <span class="badge bg-primary">Fundación</span>
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer. This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <p>21 de setiembre, 2023</p>
-            <h6>Leer más...</h6>
-          </div>
-        </a>
-        <a href="noticias.html" class="card" aria-label="link card">
-          <img src="./assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <span class="badge bg-primary">Fundación</span>
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer. This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <p>21 de setiembre, 2023</p>
-            <h6>Leer más...</h6>
-          </div>
-        </a>
-        <a href="noticias.html" class="card" aria-label="link card">
-          <img src="./assetts/img/fundacion/@sanantoniostudio.com.uy-155.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <span class="badge bg-primary">Fundación</span>
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer. This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <p>21 de setiembre, 2023</p>
-            <h6>Leer más...</h6>
-          </div>
-        </a>
+      <div id="gridCards">
+        <!--  -->
       </div>
       <div class="btnGridFooter">
         <a href="./noticias.html" class="btn btn-outline-primary">Ver todas las noticias</a>
@@ -213,6 +171,7 @@
           <button type="button" data-bs-target="#carouselLogos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapo 1"></button>
           <button type="button" data-bs-target="#carouselLogos" data-bs-slide-to="1" aria-label="Diapo 2"></button>
           <button type="button" data-bs-target="#carouselLogos" data-bs-slide-to="2" aria-label="Diapo 3"></button>
+          <button type="button" data-bs-target="#carouselLogos" data-bs-slide-to="3" aria-label="Diapo 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -237,7 +196,14 @@
               <div class="item"><img alt="logo Aires Puros Centro Saleciano" src="./assetts/logos/logo_AiresPuros.png" loading="lazy"></div>
               <div class="item"><img alt="logo Quebracho" src="./assetts/logos/logo_Quebracho.png" loading="lazy"></div>
               <div class="item"><img alt="logo Madres De La Cruz" src="./assetts/logos/logo_MadresDeLaCruz.png" loading="lazy"></div>
-              <div class="item"><img alt="logo logo Fundacion Tzedaká" src="./assetts/logos/logo_FundacionTzedaka.png" loading="lazy"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrapper">
+              <div class="item"><img alt="logo Gurises Unidos" src="./assetts/logos/logo_GurisesUnidos.png" loading="lazy"></div>
+              <div class="item"><img alt="logo Fundacion Tzedaká" src="./assetts/logos/logo_FundacionTzedaka.png" loading="lazy"></div>
+              <div class="item"><img alt="logo Centro Los Zorzales" src="./assetts/logos/logo_CentroLosZorzales.png" loading="lazy"></div>
+              <div class="item noShow"></div>
             </div>
           </div>
         </div>
@@ -248,9 +214,10 @@
 <section class="container">
   <img class="destello" src="./assetts/destello.svg" alt="">
   <article class="videoTestimonio">
-    <video class="video shadowP" aria-label="Testimonio de Cecilia Sena, Directora Nacional de Desarrollo Social, MIDES">
+    <video class="video shadowP" preload="none" poster="./assetts/testimonios/MidesLoading.webp"
+      aria-label="Testimonio de Cecilia Sena, Directora Nacional de Desarrollo Social, MIDES">
       <source src="./assetts/testimonios/MidesTestimonio.mp4" type="video/mp4">
-      <source src="./assetts/testimonios/MidesLoading.png" type="image/png">
+      <source src="./assetts/testimonios/MidesLoading.webp" type="image/png">
       Lo sentimos, su navegador no puede reproducir el video.
     </video>
     <div>
@@ -294,6 +261,7 @@
     </div>
   </footer>
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/codigoIndex.js"></script>
 </body>
 
 </html>

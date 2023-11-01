@@ -19,8 +19,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg shadowB">
+    <header class="shadowB">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
@@ -65,7 +65,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="noticias.html"
+                <a class="nav-link active" aria-current="page" href="noticias.html"
                   ><i class="iconLogo"></i>Noticias</a
                 >
               </li>
@@ -95,8 +95,31 @@
       </article>
     </section>
     
-    <section class="container">
-        
+    <section class="container noticias">
+        <fieldset id="filtros" class="shadowB">
+          <!-- <label for="destacadas" class="form-label">Filtro destacadas</label> -->
+          <select class="form-select" id="selDestacadas" name="destacadas" aria-label="filtrar noticias destacadas">
+            <option value="todas">Todas las noticias</option>
+            <option value="destacada">Noticias destacadas</option>
+          </select>
+
+         <!--  <label for="categorias" class="form-label">Filtro categoría</label> -->
+          <select class="form-select" id="selCategorias" name="categorias" aria-label="filtrar categorias de noticias">
+            <option value="todas">Todas las categorías</option>
+            <option value="fundacion">Fundación</option>
+            <option value="trayectorias">Trayectorias</option>
+            <option value="sinLimites">Sin Límites</option>
+            <option value="social">Compromiso Social</option>
+          </select>
+
+          <!-- <label for="fecha" class="form-label">Filtrar fecha desde...</label> -->
+          <input id="selFecha" name="fecha" class="form-control" type="date" aria-label="filtrar fecha desde"/>
+
+          <button id="btnFtrNoticias" class="btn btn-primary" type="button">Filtrar Noticias</button>
+        </fieldset>
+        <div id="gridNoticias"><!--  -->
+          
+        </div>
     </section>
 
 
@@ -142,5 +165,6 @@
       </div>
     </footer>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/codigoNoticias.js"></script>
   </body>
 </html>

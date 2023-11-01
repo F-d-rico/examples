@@ -19,8 +19,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg shadowB">
+    <header class="shadowB">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
@@ -69,8 +69,8 @@
                   ><i class="iconLogo"></i>Noticias</a
                 >
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contacto.html"
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html"
                   ><i class="iconLogo"></i>Contacto</a
                 >
               </li>
@@ -97,6 +97,7 @@
     
     <section class="container">
           <form method="post" action="" class="row gx-4 gy-2 needs-validation" novalidate>
+            <!-- enctype="multipart/form-data" -->
             <div class="col-md-6">
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
@@ -134,7 +135,7 @@
 
             <div class="col-12">
               <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" name="mensaje" id="mensaje" maxlength="800" rows="5" placeholder="Ingrese su mensaje aqui..." aria-describedby="mensajeHelp"></textarea>
+              <textarea class="form-control" name="mensaje" id="mensaje" maxlength="800" rows="5" placeholder="Ingrese su mensaje aqui..." aria-describedby="mensajeHelp" required></textarea>
               <div id="mensajeHelp" class="form-text">
                 Máximo de 800 carateres.
               </div>
