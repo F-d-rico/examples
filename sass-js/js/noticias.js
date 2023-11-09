@@ -4,6 +4,21 @@ let arrayNoticias = [
 
   new Noticia(
     true,
+    'Sin Límites',
+    '2023-11-07',
+    'La inclusión nos une',
+    'Como cada año, realizamos nuestra reunión de evaluación del Programa de Inclusión Laboral para Personas con Discapacidad, en la que participan representantes de las sucursales que forman parte del mismo.',
+    '2023-11-07_sinLimites.webp',
+    'Participantes de la evaluación anual del Programa Sin Límites, posan en el auditorio del nuevo eHub Tienda Inglesa',
+    `
+    <p>Esta instancia es muy valorada por todos quienes trabajan para el Programa, porque nos permiten compartir experiencias que nos motivan a seguir creciendo, pero también aquellas que nos hacen repensar nuestros procesos y mejorarlos.</p>
+    <p>Este año tuvimos la alegría del reconocimiento del Programa IdeaR de DERES y el LSQA, que no solo reconoció el cumplimiento de nuestra práctica para los Objetivos de Desarrollo Sostenible de las Naciones Unidas, sino que se posicionó como Práctica Inspiradora para otras empresas a nivel nacional. Estos reconocimientos nos llenan de orgullo y nos impulsan hacia la mejora continua, para crear más oportunidades para uno de los grupos más vulnerables en cuanto a la empleabilidad.</p>
+    <p>Agradecemos infinitamente el trabajo de quienes, voluntariamente, han asumido el compromiso de crear el entorno y acompañar estos procesos con determinación y entusiasmo, lo que enaltece a este Programa.</p>
+    `
+  ),
+
+  new Noticia(
+    false,
     'Trayectorias',
     '2023-11-01',
     'Un nuevo grupo de Formación Dual finalizó su capacitación',
@@ -18,7 +33,7 @@ let arrayNoticias = [
   ),
 
   new Noticia(
-    true,
+    false,
     'Fundación',
     '2023-10-27',
     'Tienda Inglesa renovó su apoyo a la Fundación Celeste',
@@ -33,7 +48,7 @@ let arrayNoticias = [
   ),
 
   new Noticia(
-    false,
+    true,
     "Fundación",
     "2023-10-26",
     'Fuimos reconocidos por el Programa "IdeaR Sostenibilidad"',
@@ -67,7 +82,7 @@ let arrayNoticias = [
   ),
 
   new Noticia(
-    true,
+    false,
     "Fundación",
     "2023-10-19",
     "Día Mundial Contra el Cáncer de Mama",

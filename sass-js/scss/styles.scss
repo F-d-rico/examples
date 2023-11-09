@@ -320,9 +320,9 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $primary, rgba(255, 255, 255, 0)),
-    url(../assetts/img/fundacion/@sanantoniostudio.com.uy-155.webp);
+    url(../assetts/img/sinLimites/@alvaroportillos-501.webp);
   background-size: cover;
-  background-position: right top;
+  background-position: center 16%;;
   height: 32rem;
 }
 
@@ -344,7 +344,7 @@ header {
   background-image: linear-gradient(to right, $red, rgba(255, 255, 255, 0)),
     url(../assetts/img/trayectorias/@alvaroportillos-502.webp);
   background-size: cover;
-  background-position: center top;
+  background-position: center 8%;
   height: 32rem;
   width: 105%;
 }
@@ -354,9 +354,9 @@ header {
   justify-content: flex-start;
   align-items: flex-end;
   background-image: linear-gradient(to right, $yellow, rgba(255, 255, 255, 0)),
-    url(../assetts/img/sinLimites/@alvaroportillos-501.webp);
+    url(../assetts/img/sinLimites/@alvaroportillos-504.webp);
   background-size: cover;
-  background-position: center 12%;
+  background-position: right 12%;
   height: 32rem;
   width: 105%;
 }
@@ -541,6 +541,10 @@ header {
     width: 100%;
     margin-bottom: 4rem;
   }
+}
+
+.noticiasIndex {
+  margin: 8rem 0;
 }
 
 .objetivos {
@@ -771,6 +775,7 @@ header {
     padding: 0.5rem;
     margin-left: -0.5rem;
     color: $primary;
+    background-color: $body-bg;
     &:hover {
       color: $body-color;
     }
