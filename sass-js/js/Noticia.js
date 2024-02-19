@@ -117,7 +117,7 @@ ampliarNoticia(){
     <p class="text-body-emphasis">${this.bajada}</p>
     <img src="./assetts/noticias/${this.imagen}" alt="${this.altImagen}">
     <div>${this.texto}</div>
-
+    <a href="noticias.html">Regresar</a>
     `
     return amplia
 }}

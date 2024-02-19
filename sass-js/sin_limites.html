@@ -228,7 +228,9 @@
         <article>
           <h4>Si estás buscando empleo y estás inscripto en el Registro Nacional de Personas con Discapacidad, te invitamos a dejarnos tu CV y copia del registro para nuestra base de datos, para considerarte como candidato para futuras vacantes.
             ¡Muchas gracias!</h4>
-          <form method="post" action="" class="row gx-4 gy-2 needs-validation" novalidate>
+          <form method="post" action="https://public.herotofu.com/v1/67f8cd00-8313-11ee-9341-f71d382974be" class="row gx-4 gy-2 needs-validation" novalidate
+          enctype="multipart/form-data">  
+          <!--  -->
             <div class="col-md-6">
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
@@ -244,7 +246,7 @@
                 Debe ingresar su apellido aqui
               </div>
             </div>
-            
+            <input type="text" name="_honey" class="honey" aria-label="no completar">
             <div class="col-12">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email" aria-describedby="emailHelp" required>
@@ -255,10 +257,16 @@
                 Debe ingresar una dirección de correo valida
               </div>
             </div>
-
+            <div style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
+            <!--  -->
             <div class="col-12">
               <label for="registro" class="form-label">Subir Registro</label>
-              <input class="form-control" type="file" id="registro" name="registro" required>
+              <input class="form-control" type="file" id="registro" name="registro"
+              accept=".jpg, .jpeg, .png, .pdf, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+              <!--  -->
+              <div id="registroHelp" class="form-text">
+                Solo son aceptados archivos de imagen, Word o PDF. Tamaño: 5Mb max.
+              </div>
               <div class="valid-feedback">
                 El Registro fue cargado con éxito
               </div>
@@ -269,7 +277,12 @@
 
             <div class="col-12">
               <label for="curriculum" class="form-label">Subir curriculum</label>
-              <input class="form-control" type="file" id="curriculum" name="curriculum" required>
+              <input class="form-control" type="file" id="curriculum" name="curriculum" 
+              accept=".jpg, .jpeg, .png, .pdf, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+              <!--  -->
+              <div id="curriculumHelp" class="form-text">
+                Solo son aceptados archivos de imagen, Word o PDF. Tamaño: 5Mb max.
+              </div>
               <div class="valid-feedback">
                 El curriculum vitae fue cargado con éxito
               </div>

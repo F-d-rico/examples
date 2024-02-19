@@ -4,6 +4,89 @@ let arrayNoticias = [
 
   new Noticia(
     true,
+    'Fundación',
+    '2024-02-19',
+    'Tienda Inglesa y Fundación Corazoncitos se unen por los niños con cardiopatías congénitas',
+    'Hasta el 29 de febrero se pueden adquirir lazos solidarios en todas las cajas de la Tienda y colaborar con los niños que padecen esta enfermedad.',
+    '2024-02-19_fudacion.webp',
+    'Afiche del Día Internacional de las Cardiopatías Congénitas, Incluye QR a más información.',
+    `
+    <p>En el marco del Día Internacional de las Cardiopatías Congénitas, que se celebró el pasado 14 de febrero, Fundación Corazoncitos y Tienda Inglesa lanzaron una nueva edición de la campaña #unlazodeamor, en la que invitan a clientes a colaborar adquiriendo un lazo solidario.</p>
+    <p>Hasta el jueves 29 de febrero, colaborando con $ 20 en las cajas de todas las sucursales de Tienda Inglesa se podrán adquirir los lazos, contribuyendo de esta forma a recaudar los fondos necesarios para financiar el alojamiento de las familias de niños con cardiopatías congénitas provenientes del interior del país que deben hospedarse en Montevideo, para poder realizarse cirugías, tratamientos o controles.
+    Desde el interior también se podrá participar a través del WhatsApp 093 581 189, adquiriendo los lazos con envío gratuito, a partir de la compra de cinco unidades.</p>
+    <p>La celebración del Día Internacional de las Cardiopatías Congénitas es una fecha especial que tiene como objetivo sensibilizar a la sociedad sobre esta problemática y la importancia de la detección temprana de esta enfermedad, para que los niños que nacen con ella puedan recibir el tratamiento adecuado y tener una mejor calidad de vida.
+    Las cardiopatías congénitas son malformaciones del corazón o de los grandes vasos sanguíneos que se pueden encontrar en el feto y en el recién nacido. Se trata de una de las primeras causas de muerte neonatal en nuestro país, que afecta a uno de cada 100 niños.</p>
+    <p>Fundación Corazoncitos nació en el año 2014 como organización con personería jurídica. Desde su creación, ha trabajado al servicio de los niños con cardiopatías congénitas y sus familias, a través de proyectos que apuntan al apoyo al entorno de los pacientes, la capacitación a los equipos de salud y la detección precoz.
+    En 2024, Fundación Corazoncitos celebra sus primeros 10 años y sigue creciendo gracias al apoyo de familias, voluntarios y aliados que suman su corazón para llegar a todo el país.</p>
+    <p>Para conocer más sobre Fundación Corazoncitos se puede visitar su 
+    <a href="https://www.corazoncitos.org.uy" target="_blank">página web</a>
+    , enviar un email (info@corazoncitos.org.uy), comunicarse por WhatsApp (095 261 095), o visitar sus redes sociales:
+    <a href="https://www.facebook.com/fundacioncorazoncitosuruguay/?locale=" target="_blank">Facebook</a>,  
+    <a href="https://twitter.com/f_corazoncitos?lang=es" target="_blank">X (twitter)</a> e 
+    <a href="https://www.instagram.com/fundacioncorazoncitos/?hl=es-la" target="_blank">Instagram</a>
+    .</p>
+    `
+  ),
+
+  new Noticia(
+    true,
+    'Sin Límites',
+    '2023-12-04',
+    'Reconocimiento “Sello Uruguay Valora”',
+    'Es un orgullo que Tienda Inglesa haya sido nuevamente distinguida por el "Sello Uruguay Valora"',
+    '2023-12-04_sinLimites.webp',
+    'Representantes de las Empresas reconocidas con el "Sello Uruguay Valora" sonrien a cámara con los diplomas,  junto a los organizadores del evento',
+    `
+    <p>Distinción que reconoce las prácticas de inclusión laboral para personas con discapacidad, realizadas a través de nuestro programa &quot;Sin Límites”.</p>
+    <p>Agradecemos a la Red de Empresas Inclusivas y a la Sociedad Uruguaya de Personas por llevar adelante esta iniciativa que nos permite evaluar nuestros procesos y poner en valor el trabajo que estamos realizando.</p>
+    `
+  ),
+
+  new Noticia(
+    false,
+    'Trayectorias',
+    '2023-12-04',
+    'Cierre de la formación de Trayectorias',
+    'Luego de un gran año para nuestro programa Trayectorias, culminamos noviembre con la entrega de diplomas del Grupo 17 de Montevideo, y el primer Grupo de Maldonado.',
+    '2023-12-04_trayectorias.webp',
+    'Los participantes del programa Trayectorias posan con sus diplomas, en el eHub Tienda Inglesa, jusnto con sus instructores.',
+    `
+    <p>Hoy, luego de haber completado todas las etapas de formación, son 60 jóvenes los que se suman al mercado laboral formal, con una gran perspectiva para el desarrollo de sus carreras.</p>
+    <p>Ellos estarán trabajando en las nuevas sucursales, aportando todo lo que han aprendido en este tiempo y, principalmente, su alegría y ganas de avanzar en este camino.</p>
+    <p>¡Les deseamos muchos éxitos para todo lo que se viene!</p>
+    `
+  ),
+
+  new Noticia(
+    false,
+    'Sin Límites',
+    '2023-12-03',
+    'Día Internacional de las Personas con Discapacidad',
+    'Este año hemos tenido grandes alegrías a través de nuestro programa “Sin Límites”:',
+    '2023-12-03_sinLimites.webp',
+    'Banner en ocación del día... "En este día especial, queremos reconocer a nuestros equipos que, con dedicación y compromiso, trabajan para continuar construyendo un entorno laboral inclusivo. Juntos alcanzamos logros impensables, lo que nos enorgullece profundamente, y nos alienta a ir a más."',
+    `
+    <p>Incorporamos a más colaboradores a nuestros equipos, tuvimos instancias de intercambio y evaluación, recibimos los reconocimientos de DERES como práctica de impacto social positivo e inspiración para otras empresas en el ámbito nacional, y renovamos el “Sello Uruguay Valora”.</p>
+    <p>Ninguno de estos logros sería posible sin el inconmensurable trabajo que realizan nuestros colaboradores cada día. Por esto, hoy, queremos agradecer a quienes eligen sumarse a nuestros equipos, y a quienes los reciben, haciendo de este camino, una gran experiencia de desarrollo profesional y personal.</p>
+    `
+  ),
+
+  new Noticia(
+    false,
+    'Trayectorias',
+    '2023-11-14',
+    'Cimientos: reconocimientos a socios 2023',
+    'En el marco del encuentro “Reconocimiento a Socios 2023” organizado por Cimientos Uruguay, tuvimos la alegría de recibir un hermoso reconocimiento que celebra el acuerdo que mantenemos para brindar oportunidades de calidad a jóvenes de nuestro país.',
+    '2023-11-14_trayectorias.webp',
+    'Los participantes del encuentro “Reconocimiento a Socios 2023” escuchan a los organizadores de Cimientos, mientras se sirve el desayuno.',
+    `
+    <p>En esta oportunidad, Ignacio Munyo, Director Ejecutivo de CERES, brindó una charla sobre el futuro del trabajo que nos interpela sobre cómo preparar a nuestros equipos para los desafíos que enfrentaremos en el mediano plazo.</p>
+    <p>Les agradecemos por invitarnos a intercambiar sobre los logros de este año, y comenzar a visualizar el trabajo que nos espera para 2024.</p>
+    `
+  ),
+
+  new Noticia(
+    true,
     'Sin Límites',
     '2023-11-07',
     'La inclusión nos une',

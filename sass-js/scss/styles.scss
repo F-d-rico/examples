@@ -178,6 +178,10 @@ a.btn {
   box-shadow: 0.3rem 0.3rem 0.3rem rgba($body-color, 0.3);
 }
 
+.honey {
+  display: none;
+}
+
 .bg-red {
   background-color: $red;
 }
@@ -356,7 +360,7 @@ header {
   background-image: linear-gradient(to right, $yellow, rgba(255, 255, 255, 0)),
     url(../assetts/img/sinLimites/@alvaroportillos-504.webp);
   background-size: cover;
-  background-position: right 12%;
+  background-position: center 12%;
   height: 32rem;
   width: 105%;
 }
@@ -835,7 +839,7 @@ footer {
     align-items: center;
     color: white;
     img {
-      height: 4rem;
+      height: 3.5rem;
       margin: 0 1rem 1rem 0;
     }
     p {
@@ -1126,9 +1130,14 @@ form {
     width: 60%;
   }
 
-  footer > div p {
+  footer > div {
+    p {
     order: 0;
     width: initial;
+    }
+    img {
+      height: 4rem;
+    }
   }
 
   .videoFrame {

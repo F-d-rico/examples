@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+
+      <loc>https://www.fundacion.tiendainglesa.com.uy</loc>
+
+      <lastmod>2023-11-15</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.fundacion.tiendainglesa.com.uy/nosotros.html</loc>
+
+      <lastmod>2023-11-15</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.fundacion.tiendainglesa.com.uy/trayectorias.html</loc>
+
+      <lastmod>2023-11-15</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.fundacion.tiendainglesa.com.uy/sin_limites.html</loc>
+
+      <lastmod>2023-11-15</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.fundacion.tiendainglesa.com.uy/social.html</loc>
+
+      <lastmod>2023-11-15</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.fundacion.tiendainglesa.com.uy/noticias.html</loc>
+
+      <lastmod>2023-11-15</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.fundacion.tiendainglesa.com.uy/contacto.html</loc>
+
+      <lastmod>2023-11-15</lastmod>
+
+      <changefreq>never</changefreq>
+
+   </url>
+   
+
+</urlset>

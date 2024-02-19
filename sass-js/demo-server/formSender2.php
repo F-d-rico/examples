@@ -45,7 +45,7 @@
     $body .= "Content-Type: application/octet-stream; name=\"" . $curriculumnameee . "\"" . $eol;
     $body .= "Content-Transfer-Encoding: base64" . $eol;
     $body .= "Content-Disposition: attachment" . $eol;
-    $body .= $content . $eol;
+    $body .= $content2 . $eol;
     $body .= "--" . $separator . "--";
     //SEND Mail
     if (mail($mailto, $subject, $body, $headers)) {

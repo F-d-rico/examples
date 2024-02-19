@@ -17,7 +17,6 @@
 
     <title>Fundación Tienda Inglesa</title>
   </head>
-
   <body>
     <header class="shadowB">
       <nav class="navbar navbar-expand-lg">
@@ -55,7 +54,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sin_limites.html"
+                <a class="nav-link active" aria-current="page" href="sin_limites.html"
                   ><i class="iconLogo"></i>Sin Límites</a
                 >
               </li>
@@ -65,11 +64,11 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="noticias.html"
+                <a class="nav-link" href="noticias.html"
                   ><i class="iconLogo"></i>Noticias</a
                 >
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="contacto.html"
                   ><i class="iconLogo"></i>Contacto</a
                 >
@@ -81,46 +80,22 @@
     </header>
 
     <section class="hero">
-      <div class="bgImgNoticias">
+      <div class="bgImgSinLimites">
         <span class="container">
-          <h1>NOTICIAS</h1>
+          <h1>SIN LÍMITES</h1>
         </span> 
       </div>
-      <article class="container">
-        <h4 class="shadowY">
-          Te invitamos a conocer más sobre nuestro trabajo.<br><br>
-          Podes filtrar las noticias segun categoria, fecha desde o destacadas aqui debajo...
-        </h4>
-        <img src="./assetts/flecha.svg" alt="" />
-      </article>
     </section>
-    
-    <section class="container noticias">
-        <fieldset id="filtros" class="shadowB">
-          <!-- <label for="destacadas" class="form-label">Filtro destacadas</label> -->
-          <select class="form-select" id="selDestacadas" name="destacadas" aria-label="filtrar noticias destacadas">
-            <option value="todas">Todas las noticias</option>
-            <option value="destacada">Noticias destacadas</option>
-          </select>
+    <br><br>
+    <section class="container">
+      <div class="seccionCierre sinLimites">
+        <article>
+         
+          <h4>Su formulario a sido enviado. ¡Muchas gracias!</h4>
+          <a href="sin_limites.html">Continuar navegando</a>
 
-         <!--  <label for="categorias" class="form-label">Filtro categoría</label> -->
-          <select class="form-select" id="selCategorias" name="categorias" aria-label="filtrar categorias de noticias">
-            <option value="todas">Todas las categorías</option>
-            <option value="fundacion">Fundación</option>
-            <option value="trayectorias">Trayectorias</option>
-            <option value="sinLimites">Sin Límites</option>
-            <option value="social">Compromiso Social</option>
-          </select>
-
-          <!-- <label for="fecha" class="form-label">Filtrar fecha desde...</label> -->
-          <input id="selFecha" name="fecha" class="form-control" type="date" aria-label="filtrar fecha desde"/>
-
-          <button id="btnFtrNoticias" class="btn btn-primary" type="button">Filtrar Noticias</button>
-        </fieldset>
-        
-        <div id="gridNoticias"><!--  -->
-          
-        </div>
+        </article>
+      </div>
     </section>
 
 
@@ -142,6 +117,5 @@
       </div>
     </footer>
     <script type="module" src="./js/main.js"></script>
-    <script type="module" src="./js/codigoNoticias.js"></script>
   </body>
 </html>
