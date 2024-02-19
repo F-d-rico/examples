@@ -8,7 +8,7 @@ let arrayNoticias = [
     '2024-02-19',
     'Tienda Inglesa y Fundación Corazoncitos se unen por los niños con cardiopatías congénitas',
     'Hasta el 29 de febrero se pueden adquirir lazos solidarios en todas las cajas de la Tienda y colaborar con los niños que padecen esta enfermedad.',
-    '2024-02-19_fudacion.webp',
+    '2024-02-19_fundacion.webp',
     'Afiche del Día Internacional de las Cardiopatías Congénitas, Incluye QR a más información.',
     `
     <p>En el marco del Día Internacional de las Cardiopatías Congénitas, que se celebró el pasado 14 de febrero, Fundación Corazoncitos y Tienda Inglesa lanzaron una nueva edición de la campaña #unlazodeamor, en la que invitan a clientes a colaborar adquiriendo un lazo solidario.</p>
@@ -16,6 +16,10 @@ let arrayNoticias = [
     Desde el interior también se podrá participar a través del WhatsApp 093 581 189, adquiriendo los lazos con envío gratuito, a partir de la compra de cinco unidades.</p>
     <p>La celebración del Día Internacional de las Cardiopatías Congénitas es una fecha especial que tiene como objetivo sensibilizar a la sociedad sobre esta problemática y la importancia de la detección temprana de esta enfermedad, para que los niños que nacen con ella puedan recibir el tratamiento adecuado y tener una mejor calidad de vida.
     Las cardiopatías congénitas son malformaciones del corazón o de los grandes vasos sanguíneos que se pueden encontrar en el feto y en el recién nacido. Se trata de una de las primeras causas de muerte neonatal en nuestro país, que afecta a uno de cada 100 niños.</p>
+    <video class="shadowY" controls="" autoplay="" muted="" loop="" controlslist="nodownload" aria-label="Video publicitario de la campaña #unlazodeamor, lanzada por Fundación Corazoncitos y Tienda Inglesa, un grupo de teatro negro de jóvenes forma con sus brazos las palabras de la frase "tu ayuda crea lazos de amor">
+      <source src="./assetts/noticias/2024-02-19_fundacionVideo.mp4" type="video/mp4">
+      Lo sentimos, su navegador no puede reproducir el video.
+    </video>
     <p>Fundación Corazoncitos nació en el año 2014 como organización con personería jurídica. Desde su creación, ha trabajado al servicio de los niños con cardiopatías congénitas y sus familias, a través de proyectos que apuntan al apoyo al entorno de los pacientes, la capacitación a los equipos de salud y la detección precoz.
     En 2024, Fundación Corazoncitos celebra sus primeros 10 años y sigue creciendo gracias al apoyo de familias, voluntarios y aliados que suman su corazón para llegar a todo el país.</p>
     <p>Para conocer más sobre Fundación Corazoncitos se puede visitar su 
