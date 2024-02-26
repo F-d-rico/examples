@@ -4,6 +4,36 @@ let arrayNoticias = [
 
   new Noticia(
     true,
+    'Trayectorias',
+    '2024-02-23',
+    'Taller de Capacitación para Empleabilidad de Jóvenes',
+    'Invitamos a todas las instituciones interesadas en fortalecer el acompañamiento hacia la empleabilidad de jóvenes (18 a 24 años) en situación de vulnerabilidad, a que se unan a nuestro taller, programado para el miércoles 6 de marzo, de 9 a 13 horas.',
+    '2024-02-23_trayectorias.webp',
+    'Afiche del Día Internacional de las Cardiopatías Congénitas, Incluye QR a más información.',
+    `
+    <p>Durante el taller, intercambiaremos sobre estrategias para guiar a estos jóvenes en su camino
+    hacia el empleo, por lo que, alentamos especialmente a participar a directivos y
+    referentes/educadores comprometidos con esta causa.</p>
+    <p>Además, la participación en el taller brindará a las instituciones la oportunidad de presentar
+    candidatos para formar parte del Programa Trayectorias, a través del que los jóvenes son
+    capacitados y pueden recibir propuestas laborales en Tienda Inglesa.</p>
+    <p>Para inscribirse, es necesario cumplir con los siguientes requisitos:</p>
+    <ul>
+    <li>Contar con registro legal de la institución</li>
+    <li>Tener una sólida experiencia previa en trabajo socioeducativo con jóvenes</li>
+    <li>Contar con uno o más referentes directos de los jóvenes</li>
+    <li>Comprometerse a participar activamente en el proceso de postulación y a estar
+    disponible para el contacto durante todo el acompañamiento, hasta la finalización del
+    período de prueba laboral</li>
+    </ul>
+    <p>El plazo de registro estará abierto hasta el 29 de febrero. Para inscribirse, por favor, acceda al
+    siguiente enlace: 
+    <a href="https://forms.office.com/r/Rgn7DHCiQ8" target="_blank">inscripciones</a>
+    .</p>
+    `
+  ),
+  new Noticia(
+    true,
     'Fundación',
     '2024-02-19',
     'Tienda Inglesa y Fundación Corazoncitos se unen por los niños con cardiopatías congénitas',
