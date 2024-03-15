@@ -5,11 +5,32 @@ let arrayNoticias = [
   new Noticia(
     true,
     'Trayectorias',
+    '2024-03-06',
+    'Primer Taller de Capacitación para Instituciones del ciclo 2024',
+    'Dando inicio al ciclo 2024 del Programa Trayectorias, organizamos el primer taller de Capacitación para Instituciones interesadas en presentar candidatos.',
+    '2024-03-06_trayectorias.webp',
+    'Los participantes del taller de capacitación escuchan la presentación de la instructora, en un salón del eHub Tienda Inglesa.',
+    `
+    <p>Durante el encuentro, en el que participaron 14 Organizaciones de la Sociedad Civil y
+    representantes de programas del Ministerio de Desarrollo Social (MIDES) y del
+    Instituto del Niño y Adolescente del Uruguay (INAU), se generaron interesantes
+    intercambios sobre las estrategias para guiar a estos jóvenes en su camino hacia el
+    empleo, y sostenibilidad del mismo.</p>
+    <p>Los participantes destacaron la relevancia y utilidad de esta iniciativa para crear redes
+    de apoyo y contención, para los jóvenes en situación de vulnerabilidad.</p>
+    <p>¡Celebramos este primer paso para brindar más y mejores oportunidades a quienes
+    más las necesitan!</p>
+    `
+  ),
+
+  new Noticia(
+    true,
+    'Trayectorias',
     '2024-02-23',
     'Taller de Capacitación para Empleabilidad de Jóvenes',
     'Invitamos a todas las instituciones interesadas en fortalecer el acompañamiento hacia la empleabilidad de jóvenes (18 a 24 años) en situación de vulnerabilidad, a que se unan a nuestro taller, programado para el miércoles 6 de marzo, de 9 a 13 horas.',
     '2024-02-23_trayectorias.webp',
-    'Afiche del Día Internacional de las Cardiopatías Congénitas, Incluye QR a más información.',
+    'Los participantes del programa Trayectorias posan con sus diplomas, en el eHub Tienda Inglesa, junto con sus instructores.',
     `
     <p>Durante el taller, intercambiaremos sobre estrategias para guiar a estos jóvenes en su camino
     hacia el empleo, por lo que, alentamos especialmente a participar a directivos y
@@ -32,6 +53,7 @@ let arrayNoticias = [
     .</p>
     `
   ),
+
   new Noticia(
     true,
     'Fundación',
@@ -83,7 +105,7 @@ let arrayNoticias = [
     'Cierre de la formación de Trayectorias',
     'Luego de un gran año para nuestro programa Trayectorias, culminamos noviembre con la entrega de diplomas del Grupo 17 de Montevideo, y el primer Grupo de Maldonado.',
     '2023-12-04_trayectorias.webp',
-    'Los participantes del programa Trayectorias posan con sus diplomas, en el eHub Tienda Inglesa, jusnto con sus instructores.',
+    'Los participantes del programa Trayectorias posan con sus diplomas, en el eHub Tienda Inglesa, junto con sus instructores.',
     `
     <p>Hoy, luego de haber completado todas las etapas de formación, son 60 jóvenes los que se suman al mercado laboral formal, con una gran perspectiva para el desarrollo de sus carreras.</p>
     <p>Ellos estarán trabajando en las nuevas sucursales, aportando todo lo que han aprendido en este tiempo y, principalmente, su alegría y ganas de avanzar en este camino.</p>
