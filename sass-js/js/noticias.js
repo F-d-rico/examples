@@ -4,6 +4,26 @@ let arrayNoticias = [
 
   new Noticia(
     true,
+    'Fundación',
+    '2024-04-08',
+    'La Hora Azul llega a Tienda Inglesa para brindar una experiencia de compra inclusiva',
+    'Cada jueves de 17:00 a 18:00 horas en todas las sucursales se reduce el brillo de las luces, se elimina la música funcional y el anuncio de promociones.',
+    '2024-04-08_fundacion.webp',
+    'Ingreso de la sucursal de Montevideo Shopping, en el comienzo de la hora azul',
+    `
+    <p>Tienda Inglesa, en conjunto con Fundación Tienda Inglesa, se sumó a la iniciativa La Hora Azul, que busca generar entornos tranquilos y seguros para las personas con trastornos del espectro autista y sus familias.
+    </p>
+    <p>Esta iniciativa tiene lugar todos los jueves entre las 17:00 y las 18:00 horas, cuando todas las sucursales de La Tienda se transforman en espacios más calmos y acondicionados para quienes se sienten más cómodos con estas condiciones.
+    </p>
+    <p>Para propiciar este ambiente se reduce el brillo de las luces y las pantallas, y se anula la música funcional, así como los anuncios de las promociones.
+    </p>
+    <p>Esta acción es una de las tantas que la Tienda lleva adelante para promover entornos inclusivos, ofreciendo a sus clientes una experiencia positiva de paseo y compra.
+    </p>
+    `
+  ),
+
+  new Noticia(
+    true,
     'Trayectorias',
     '2024-03-06',
     'Primer Taller de Capacitación para Instituciones del ciclo 2024',
