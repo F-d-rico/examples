@@ -4,6 +4,28 @@ let arrayNoticias = [
 
   new Noticia(
     true,
+    'Trayectorias',
+    '2024-05-30',
+    '¡Nuevas oportunidades laborales para jóvenes a través del Programa Trayectorias!',
+    'Estamos encantados de compartir una gran noticia al cierre de mayo: un nuevo grupo de jóvenes participantes de nuestro Programa Trayectorias ha recibido oportunidades laborales en Tienda Inglesa.',
+    '2024-05-30_trayectorias.webp',
+    'Los participantes del programa Trayectorias posan con sus diplomas, en el eHub Tienda Inglesa, junto con sus instructores',
+    `
+    <p>Estamos encantados de compartir una gran noticia al cierre de mayo: un nuevo grupo de jóvenes participantes de nuestro Programa Trayectorias ha recibido oportunidades laborales en Tienda Inglesa.
+    </p>
+    <p>Durante casi dos meses, estos jóvenes, provenientes de 15 diferentes organizaciones sociales en Montevideo han recorrido un camino emocionante. Comenzaron con capacitaciones donde adquirieron las habilidades y conocimientos fundamentales necesarios para iniciar su trayectoria laboral formal.
+    </p>
+    <p>Hoy, celebramos que se sumen a la familia de Tienda Inglesa y estamos emocionados de ver cómo continuarán avanzando en su desarrollo personal y profesional.
+    </p>
+    <p>Agradecemos profundamente a Centro Educativo Los Tréboles por su apoyo en este proceso, así como a todas las instituciones que confían en nuestro trabajo para ofrecer oportunidades significativas a los jóvenes de nuestra comunidad.
+    </p>
+    <p>¡Felicitaciones a todos los jóvenes y que sigan alcanzando grandes logros en el futuro!
+    </p>
+    `
+  ),
+
+  new Noticia(
+    true,
     'Fundación',
     '2024-04-08',
     'La Hora Azul llega a Tienda Inglesa para brindar una experiencia de compra inclusiva',
