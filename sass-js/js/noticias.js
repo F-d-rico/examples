@@ -5,6 +5,26 @@ let arrayNoticias = [
   new Noticia(
     true,
     'Trayectorias',
+    '2024-10-14',
+    'Un nuevo grupo inicia su trayectoria laboral en Maldonado',
+    'Hoy, tenemos el orgullo de presentarles a estos jóvenes que, luego de un intenso proceso, finalizaron su capacitación para ser parte de Tienda Inglesa.',
+    '2024-10-14_trayectorias.webp',
+    'Los participantes del programa Trayectorias en Maldonado posan con sus diplomas, en el eHub Tienda Inglesa, junto con sus instructores',
+    `
+    <p>Ellos conforman el Grupo 20 de egresados de Fundación, que se suman 814 que ya han participado de nuestro Programa Trayectorias.
+    </p>
+    <p>Ahora empieza para ellos el desafío de la inserción laboral formal, acompañados por nuestros equipos, que hacen un trabajo increíble para que su camino sea de logros y crecimiento.
+    </p>
+    <p>Desde , ¡agradecemos a todos quienes, día a día, se comprometen para que estos jóvenes tengan la oportunidad de aprender y desarrollarse en Tienda; y celebramos los logros de cada uno de ellos!
+    </p>
+    <p>¡BIENVENIDO G20!
+    </p>
+    `
+  ),
+
+  new Noticia(
+    true,
+    'Trayectorias',
     '2024-05-30',
     '¡Nuevas oportunidades laborales para jóvenes a través del Programa Trayectorias!',
     'Estamos encantados de compartir una gran noticia al cierre de mayo: un nuevo grupo de jóvenes participantes de nuestro Programa Trayectorias ha recibido oportunidades laborales en Tienda Inglesa.',
