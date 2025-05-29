@@ -4,6 +4,34 @@ let arrayNoticias = [
 
   new Noticia(
     true,
+    'Fundación',
+    '2025-02-25',
+    'Tienda Inglesa y su Fundación preparan una “Vuelta a clases de película” y suman una acción solidaria',
+    'Hasta el 16 de marzo habrá promociones en artículos para asegurar el mejor retorno a las aulas.',
+    '2025-02-25_fundacion.webp',
+    'Hall central de Tienda Inglesa ambientado para la promoción Vuelta a clases de película.',
+    `
+    <p>Tienda Inglesa lanzó la campaña “Vuelta a clases de película”, vigente hasta el domingo 16 de marzo, con promociones especiales en útiles escolares, mochilas, cuadernolas, uniformes, loncheras, notebooks, productos de escritorio y alimentos para la merienda.
+    </p>
+    <p>Con tarjetas Club Card Crédito de Scotiabank, los clientes tendrán un 25% de descuento extra en productos seleccionados del mailing.
+    </p>
+    <p>Además, para que la vuelta a clases sea de película, con compras iguales o mayores a $1.000 en artículos escolares del mailing, recibirán un 2x1 en entradas de LIFE Cinema.
+    </p>
+    <p>Por otra parte, en el marco de esta campaña, la Tienda donará cartucheras y útiles escolares a niños de diferentes organizaciones.
+    </p>
+    <p>Esta acción social es impulsada en conjunto por la Tienda y Fundación Tienda Inglesa, colaborando con el Centro de Promoción por la Dignidad Humana (CEPRODHI).
+    </p>
+    <p>Para llevar adelante esta iniciativa, la cadena decidió revalorizar lonas publicitarias que quedan en desuso, dándole una segunda vida a través de la confección de cartucheras elaboradas por mujeres que son parte de diversas áreas de CEPRODHI.
+    </p>
+    <p>A su vez, los colaboradores de la Tienda se sumaron de forma voluntaria donando útiles escolares que se entregarán junto con las cartucheras, como parte de las acciones de voluntariado que promueve Fundación Tienda Inglesa.
+    </p>
+    <p>Para conocer los productos participantes de la promoción “Vuelta a clases de película”, así como las bases y condiciones de la propuesta, se puede ingresar al <a href="https://www.tiendainglesa.com.uy/supermercado/landing/coleccionable/764" target="_blank">e-commerce</a>.
+    </p>
+    `
+  ),
+
+  new Noticia(
+    true,
     'Trayectorias',
     '2024-10-14',
     'Un nuevo grupo inicia su trayectoria laboral en Maldonado',
