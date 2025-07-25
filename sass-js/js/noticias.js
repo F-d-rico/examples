@@ -4,6 +4,26 @@ let arrayNoticias = [
 
   new Noticia(
     true,
+    'Trayectorias',
+    '2025-07-23',
+    'Más jóvenes reciben oportunidades de trabajo en Tienda Inglesa',
+    'Con mucha emoción, ayer cerramos la etapa de capacitación del Grupo 21 de nuestro Programa Trayectorias.',
+    '2025-07-23_trayectorias.webp',
+    'Los participantes del programa Trayectorias posan con sus diplomas, en el eHub Tienda Inglesa, junto con sus instructores.',
+    `
+    <p>Estos jóvenes, provenientes de 11 diferentes organizaciones sociales en Montevideo inician su primera experiencia laboral, llenos de ilusión y energía.
+    </p>
+    <p>Durante casi dos meses, fueron capacitados para adquirir las habilidades y conocimientos fundamentales para desarrollarse en el mundo del trabajo.
+    </p>
+    <p>Llenos de orgullo, les damos la bienvenida al equipo de Tienda Inglesa, convencidos que este camino les permitirá un gran desarrollo laboral y personal.
+    </p>
+    <p>Agradecemos al Centro Educativo Los Tréboles por ser parte de este proceso, a todas las instituciones que confían en nuestro trabajo, y a todos quienes, dentro de Tienda, colaboran con cada etapa del Programa, y para que, con cada edición, podamos brindar más oportunidades a quienes más las necesitan.
+    </p>
+    `
+  ),
+
+  new Noticia(
+    true,
     'Fundación',
     '2025-02-25',
     'Tienda Inglesa y su Fundación preparan una “Vuelta a clases de película” y suman una acción solidaria',
