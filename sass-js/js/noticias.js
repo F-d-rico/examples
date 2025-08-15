@@ -2,6 +2,26 @@ import Noticia from "./Noticia.js";
 
 let arrayNoticias = [
 
+    new Noticia(
+    true,
+    'Fundación',
+    '2025-08-13',
+    'Participamos en el Conversatorio "Buenas prácticas de Inclusión Sociolaboral" del MIDES',
+    'Presentamos nuestro Programa "Trayectorias" en una instancia para compartir experiencias, buenas prácticas y aprendizajes, entre actores públicos y privados.',
+    '2025-08-13_fundacion.webp',
+    'Representantes del MIDES y políticos escuchan con atención la presentación de la gerenta de Tienda Inglesa sobre el programa Trayectorias.',
+    `
+    <p>Esta semana, tuvimos el honor de participar en el Conversatorio "Buenas prácticas de Inclusión Sociolaboral" organizado por el Programa "Enlace Laboral" del Ministerio de Desarrollo Social de Uruguay (MIDES).
+    </p>
+    <p>“Enlace Laboral” es un programa que tiene como objetivo contribuir a la inserción laboral formal de personas mayores de edad de los diferentes programas del MIDES, con el que mantenemos un convenio de trabajo desde junio de 2021. 
+    </p>
+    <p>Fue una instancia para compartir experiencias, buenas prácticas y aprendizajes, entre actores públicos y privados, en la que tuvimos la oportunidad de presentar nuestro Programa "Trayectorias", por el que ya han transitado 868 jóvenes de más de 20 organizaciones de Montevideo, Canelones y Maldonado.
+    </p>
+    <p>Confiamos en que estas iniciativas colaborarán para crear más oportunidades para los jóvenes de nuestro país.
+    </p>
+    `
+  ),
+
   new Noticia(
     true,
     'Trayectorias',
