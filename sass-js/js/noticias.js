@@ -5,6 +5,28 @@ let arrayNoticias = [
     new Noticia(
     true,
     'Fundación',
+    '2025-10-20',
+    'Celebramos nuevos ingresos',
+    'Tras completar diversas instancias de formación y capacitación, los egresados de varios progamas comienzan una nueva etapa que nos llena de orgullo.',
+    '2025-10-20_fundacion.webp',
+    'Los participantes del programa Trayectorias posan con sus diplomas, en el eHub Tienda Inglesa, junto con sus instructores.',
+    `
+    <p>Con muchísima alegría, damos la bienvenida a Evelyn, Nibia, Paula, Alan, Franco y Martín, quienes se incorporan a nuestra compañía a través del Programa “Sin Límites”, enfocado en la inclusión laboral de personas con discapacidad.
+    </p>
+    <p>Tras completar diversas instancias de formación y capacitación, hoy comienzan una nueva etapa que nos llena de orgullo. Esta iniciativa fue desarrollada junto a Uniendo Lab, organización con la que venimos trabajando hace años para construir espacios laborales más inclusivos.
+    </p>
+    <p>Además, finalizamos con éxito la capacitación del Grupo 22 del Programa “Trayectorias”, en el que participaron 35 jóvenes de 13 organizaciones sociales, que ahora se suman a los 868 participantes que ya han pasado por esta experiencia en busca de una oportunidad de empleo de calidad.
+    </p>
+    <p>Gracias especiales al equipo de Selección de RR.HH., a los talleristas de Tienda Inglesa, a Centro Educativo Los Tréboles, por ser parte de todo el proceso, a la Universidad de Montevideo, por sumarse a la iniciativa a través de sus Pasantías Sociales, a República AFAP, por compartir información tan relevante para los jóvenes, y, muy especialmente, a todos los colaboradores de las sucursales que recibirán a estas personas, por su compromiso para ayudarlos en el inicio de sus caminos en Tienda y apoyar todas nuestras iniciativas.
+    </p>
+    <p>¡Gracias a todos quienes son parte de este camino hacia más y mejores oportunidades para todos!
+    </p>
+    `
+  ),
+
+    new Noticia(
+    true,
+    'Fundación',
     '2025-08-13',
     'Participamos en el Conversatorio "Buenas prácticas de Inclusión Sociolaboral" del MIDES',
     'Presentamos nuestro Programa "Trayectorias" en una instancia para compartir experiencias, buenas prácticas y aprendizajes, entre actores públicos y privados.',
